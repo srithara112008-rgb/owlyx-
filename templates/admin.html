@@ -1,0 +1,19 @@
+<h1>Admin Dashboard</h1>
+
+<form action="/add" method="POST">
+    <input name="url" placeholder="Website URL">
+    <button>Add</button>
+</form>
+
+<a href="/scan">Run Scan</a>
+
+<table border="1">
+<tr><th>URL</th><th>Status</th></tr>
+
+{% for s in sites %}
+<tr>
+    <td>{{ s[2] }}</td>
+    <td>{{ s[3] }}</td>
+</tr>
+{% endfor %}
+</table>

@@ -1,0 +1,12 @@
+<h1>Client Dashboard</h1>
+
+<table border="1">
+<tr><th>URL</th><th>Status</th></tr>
+
+{% for s in sites %}
+<tr>
+    <td>{{ s[2] }}</td>
+    <td>{{ s[3] }}</td>
+</tr>
+{% endfor %}
+</table>
